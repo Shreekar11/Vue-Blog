@@ -1,6 +1,7 @@
 <template>
-  Blog Platform
+  <RouterView />
 </template>
 
-<style>
-</style>
+<script lang="ts" setup>
+import { RouterView } from "vue-router";
+</script>
