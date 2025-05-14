@@ -1,7 +1,7 @@
 <template>
   <DefaultLayout>
     <div v-if="isLoading" class="flex justify-center">
-      <LoadingSpinner />
+      <div class="">Loading...</div>
     </div>
 
     <div v-else-if="!blog" class="text-center py-10">
@@ -9,7 +9,7 @@
       <p class="text-gray-600 mb-6">
         The blog post you're looking for doesn't exist or has been removed.
       </p>
-      <router-link to="/blog" class="text-blue-500 hover:underline">
+      <router-link :to="{ name: 'blog' }" class="text-blue-500 hover:underline">
         Go back to all blogs
       </router-link>
     </div>
