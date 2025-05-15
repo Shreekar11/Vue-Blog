@@ -42,8 +42,8 @@
   import DefaultLayout from '../layouts/DefaultLayout.vue';
   import BlogList from '../components/blog/BlogList.vue';
   import BaseButton from '../components/ui/BaseButton.vue';
-  import { useBlog } from '../composables/useBlog.ts';
-  import { useAuth } from '../composables/useAuth.ts';
+  import { useBlog } from '../composables/useBlog';
+  import { useAuth } from '../composables/useAuth';
   
   const router = useRouter();
   const { blogs } = useBlog();

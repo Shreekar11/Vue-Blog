@@ -21,11 +21,7 @@
             :error="errors.password"
           />
 
-          <div v-if="auth.error" class="p-3 bg-red-100 text-red-700 rounded-md">
-            {{ auth.error }}
-          </div>
-
-          <BaseButton type="submit" :loading="auth.isLoading" fullWidth>
+          <BaseButton type="submit" fullWidth>
             Sign In
           </BaseButton>
         </form>
